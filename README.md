@@ -18,6 +18,6 @@
 
 
 ## スクリーンショット
-![一覧画面](docs/image03.jpg)<--%300x-->
-![投稿画面](docs/image02.jpg)<--%300x-->
-![投稿画面](docs/image01.jpg)<--%300x-->
+![一覧画面](docs/image03.png)<--%300x-->
+![投稿画面](docs/image02.png)<--%300x-->
+![詳細画面](docs/image01.png)<--%300x-->
