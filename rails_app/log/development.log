@@ -1,0 +1,1701 @@
+  [1m[36m (13.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (13.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMemos (20170507160052)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170507160052"]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 10.240.0.240 at 2017-05-07 16:03:54 +0000
+Cannot render console from 10.240.0.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#hello as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 20ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/memos" for 10.240.0.214 at 2017-05-07 16:04:02 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  [1m[35mMemo Load (0.2ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 759ms (Views: 756.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.240.1.14 at 2017-05-07 16:04:03 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.240.0.240 at 2017-05-07 16:04:03 +0000
+Cannot render console from 10.240.0.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 10.240.0.240 at 2017-05-07 16:04:03 +0000
+Cannot render console from 10.240.0.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 10.240.0.214 at 2017-05-07 16:04:03 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/memos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.1.14 at 2017-05-07 16:04:03 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.240.0.214 at 2017-05-07 16:04:03 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/memos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.1.12 at 2017-05-07 16:04:03 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.240.1.30 at 2017-05-07 16:04:04 +0000
+Cannot render console from 10.240.1.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/memos/new" for 10.240.0.213 at 2017-05-07 16:04:53 +0000
+Cannot render console from 10.240.0.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#new as HTML
+  Rendered memos/_form.html.erb (109.4ms)
+  Rendered memos/new.html.erb within layouts/application (115.3ms)
+Completed 200 OK in 142ms (Views: 134.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.240.1.14 at 2017-05-08 03:28:48 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#hello as HTML
+  Rendered html template (0.1ms)
+Completed 200 OK in 28ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/memos" for 10.240.0.214 at 2017-05-08 03:29:15 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 431ms (Views: 425.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/memos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.214 at 2017-05-08 03:29:15 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.240.0.214 at 2017-05-08 03:29:15 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/memos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.1.12 at 2017-05-08 03:29:16 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 10.240.0.213 at 2017-05-08 03:29:16 +0000
+Cannot render console from 10.240.0.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.240.1.30 at 2017-05-08 03:29:16 +0000
+Cannot render console from 10.240.1.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/memos" for 10.240.1.12 at 2017-05-08 05:23:33 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  [1m[36mMemo Load (7.7ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 63ms (Views: 54.6ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/memos/new" for 10.240.1.16 at 2017-05-08 05:23:37 +0000
+Cannot render console from 10.240.1.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#new as HTML
+  Rendered memos/_form.html.erb (27.9ms)
+  Rendered memos/new.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 61ms (Views: 55.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos" for 10.240.1.30 at 2017-05-08 05:23:43 +0000
+Cannot render console from 10.240.1.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos" for 10.240.1.30 at 2017-05-08 05:26:31 +0000
+Cannot render console from 10.240.1.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/memos.json" for 10.240.0.213 at 2017-05-08 05:39:38 +0000
+Cannot render console from 10.240.0.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.2ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/index.json.jbuilder (8.9ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/memos.json" for 10.240.1.12 at 2017-05-08 06:09:20 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/index.json.jbuilder (1.3ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/memos.json" for 10.240.1.12 at 2017-05-08 06:09:34 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"テスト", "title"=>"テスト", "memo"=>{"title"=>"テスト", "body"=>"テスト"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "テスト"], ["body", "テスト"], ["created_at", "2017-05-08 06:09:34.057980"], ["updated_at", "2017-05-08 06:09:34.057980"]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  Rendered memos/_memo.json.jbuilder (1.1ms)
+  Rendered memos/show.json.jbuilder (123.8ms)
+Completed 201 Created in 156ms (Views: 129.5ms | ActiveRecord: 13.1ms)
+
+
+Started POST "/memos.json" for 10.240.0.230 at 2017-05-08 06:09:40 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"テスト", "title"=>"テスト", "memo"=>{"title"=>"テスト", "body"=>"テスト"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "テスト"], ["body", "テスト"], ["created_at", "2017-05-08 06:09:40.821957"], ["updated_at", "2017-05-08 06:09:40.821957"]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/show.json.jbuilder (1.1ms)
+Completed 201 Created in 19ms (Views: 3.6ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 06:09:41 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (1.2ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (4.2ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos" for 10.240.1.14 at 2017-05-08 06:09:59 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 06:10:41 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/index.json.jbuilder (6.5ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.1.16 at 2017-05-08 06:15:59 +0000
+Cannot render console from 10.240.1.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (181.2ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (185.3ms)
+Completed 200 OK in 189ms (Views: 187.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.16 at 2017-05-08 06:19:51 +0000
+Cannot render console from 10.240.1.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (4.9ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/memos.json" for 10.240.1.14 at 2017-05-08 06:19:59 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"テスト", "title"=>"テスト", "memo"=>{"title"=>"テスト", "body"=>"テスト"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "テスト"], ["body", "テスト"], ["created_at", "2017-05-08 06:19:59.833914"], ["updated_at", "2017-05-08 06:19:59.833914"]]
+  [1m[36m (13.3ms)[0m  [1mcommit transaction[0m
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/show.json.jbuilder (0.9ms)
+Completed 201 Created in 20ms (Views: 3.1ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/memos.json" for 10.240.0.230 at 2017-05-08 06:20:02 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (5.2ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.16 at 2017-05-08 06:31:07 +0000
+Cannot render console from 10.240.1.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (1.7ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (8.7ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/memos.json" for 10.240.0.230 at 2017-05-08 06:35:51 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (4.3ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.30 at 2017-05-08 06:36:02 +0000
+Cannot render console from 10.240.1.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (4.9ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos" for 10.240.0.214 at 2017-05-08 06:36:10 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  [1m[35mMemo Load (0.2ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/memos.json" for 10.240.0.240 at 2017-05-08 06:36:28 +0000
+Cannot render console from 10.240.0.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (3.8ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 10.240.0.213 at 2017-05-08 06:53:47 +0000
+Cannot render console from 10.240.0.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#hello as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 13ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/memos" for 10.240.0.214 at 2017-05-08 06:53:56 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  [1m[35mMemo Load (0.5ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 43ms (Views: 38.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/memos/new" for 10.240.1.12 at 2017-05-08 06:54:00 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#new as HTML
+  Rendered memos/_form.html.erb (2.6ms)
+  Rendered memos/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/memos.json" for 10.240.0.240 at 2017-05-08 07:29:09 +0000
+Cannot render console from 10.240.0.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.6ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (7.4ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/memos.json" for 10.240.1.16 at 2017-05-08 07:30:19 +0000
+Cannot render console from 10.240.1.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (29.4ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.12 at 2017-05-08 07:32:49 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (7.0ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 07:39:02 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (5.8ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 07:45:06 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (4.7ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.12 at 2017-05-08 07:45:13 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (5.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/memos.json" for 10.240.0.213 at 2017-05-08 07:45:29 +0000
+Cannot render console from 10.240.0.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"いける？", "title"=>"今回は正解？", "memo"=>{"title"=>"今回は正解？", "body"=>"いける？"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "今回は正解？"], ["body", "いける？"], ["created_at", "2017-05-08 07:45:29.078171"], ["updated_at", "2017-05-08 07:45:29.078171"]]
+  [1m[36m (18.9ms)[0m  [1mcommit transaction[0m
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/show.json.jbuilder (1.9ms)
+Completed 201 Created in 140ms (Views: 115.9ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/memos.json" for 10.240.1.16 at 2017-05-08 07:45:32 +0000
+Cannot render console from 10.240.1.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (6.8ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.214 at 2017-05-08 07:45:38 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (1.1ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (7.4ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.5 at 2017-05-08 07:48:33 +0000
+Cannot render console from 10.240.0.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (7.6ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.230 at 2017-05-08 07:48:38 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (6.5ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.12 at 2017-05-08 07:51:05 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (6.0ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.214 at 2017-05-08 07:51:11 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/index.json.jbuilder (8.9ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.214 at 2017-05-08 07:51:12 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (122.7ms)
+Completed 200 OK in 127ms (Views: 125.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.230 at 2017-05-08 07:55:09 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (7.7ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 08:02:42 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (6.5ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.230 at 2017-05-08 08:03:26 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (1.1ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (8.2ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.213 at 2017-05-08 08:03:31 +0000
+Cannot render console from 10.240.0.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (6.5ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.213 at 2017-05-08 08:03:33 +0000
+Cannot render console from 10.240.0.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (142.4ms)
+Completed 200 OK in 146ms (Views: 144.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.1.12 at 2017-05-08 08:03:36 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (6.2ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.30 at 2017-05-08 08:06:52 +0000
+Cannot render console from 10.240.1.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (5.5ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 08:06:56 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (5.0ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 08:06:58 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (7.0ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.5 at 2017-05-08 08:07:00 +0000
+Cannot render console from 10.240.0.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.2ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (4.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/memos.json" for 10.240.0.214 at 2017-05-08 08:09:32 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (5.3ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 08:10:25 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/index.json.jbuilder (8.7ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.1.12 at 2017-05-08 08:14:13 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/index.json.jbuilder (8.3ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.1.12 at 2017-05-08 08:14:17 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (7.3ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.5 at 2017-05-08 08:14:22 +0000
+Cannot render console from 10.240.0.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (6.7ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 08:16:20 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (5.5ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 08:16:49 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (6.5ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.30 at 2017-05-08 08:19:31 +0000
+Cannot render console from 10.240.1.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (5.3ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.213 at 2017-05-08 09:25:56 +0000
+Cannot render console from 10.240.0.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (5.5ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (1.1ms)
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/index.json.jbuilder (138.0ms)
+Completed 200 OK in 142ms (Views: 135.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 09:26:00 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (7.0ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 09:26:04 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (7.8ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 09:26:06 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (6.9ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 09:26:08 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/index.json.jbuilder (10.6ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.230 at 2017-05-08 09:26:17 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (7.4ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 09:26:21 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (6.4ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 09:26:26 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (6.8ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 09:26:49 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (85.3ms)
+Completed 200 OK in 90ms (Views: 88.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 09:26:54 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (7.9ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.1.16 at 2017-05-08 09:27:32 +0000
+Cannot render console from 10.240.1.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (5.8ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/memos.json" for 10.240.0.230 at 2017-05-08 09:28:11 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.5ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (126.3ms)
+Completed 200 OK in 136ms (Views: 131.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 09:33:30 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.5ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (6.7ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/memos.json" for 10.240.0.240 at 2017-05-08 09:33:38 +0000
+Cannot render console from 10.240.0.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (5.6ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.240 at 2017-05-08 09:36:27 +0000
+Cannot render console from 10.240.0.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (8.0ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos/1" for 10.240.0.33 at 2017-05-08 09:38:54 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMemo Load (1.4ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered memos/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 63ms (Views: 45.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 09:39:36 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/index.json.jbuilder (116.5ms)
+Completed 200 OK in 120ms (Views: 118.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.214 at 2017-05-08 09:47:48 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (1.0ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (1.1ms)
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (9.5ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/memos/1.json" for 10.240.1.16 at 2017-05-08 09:47:52 +0000
+Cannot render console from 10.240.1.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 1]]
+  [1m[35m (17.0ms)[0m  commit transaction
+Completed 204 No Content in 21ms (ActiveRecord: 17.6ms)
+
+
+Started DELETE "/memos/1.json" for 10.240.1.16 at 2017-05-08 09:47:55 +0000
+Cannot render console from 10.240.1.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=1):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.0ms)
+
+
+Started DELETE "/memos/1.json" for 10.240.0.33 at 2017-05-08 09:47:57 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity
+  [1m[35mMemo Load (0.1ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=1):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.8ms)
+
+
+Started GET "/memos.json" for 10.240.1.12 at 2017-05-08 09:48:18 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (4.6ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/memos/2.json" for 10.240.0.214 at 2017-05-08 09:48:23 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"2"}
+Can't verify CSRF token authenticity
+  [1m[35mMemo Load (0.1ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "memos" WHERE "memos"."id" = ?  [["id", 2]]
+  [1m[36m (9.9ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 14ms (ActiveRecord: 10.4ms)
+
+
+Started DELETE "/memos/2.json" for 10.240.1.12 at 2017-05-08 09:48:33 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"2"}
+Can't verify CSRF token authenticity
+  [1m[35mMemo Load (0.3ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=2):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 09:48:42 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (4.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 12:28:39 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (5.0ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (9.3ms)
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 5.0ms)
+
+
+Started DELETE "/memos/3.json" for 10.240.1.14 at 2017-05-08 12:28:43 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"3"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 3]]
+  [1m[35m (21.8ms)[0m  commit transaction
+Completed 204 No Content in 25ms (ActiveRecord: 22.5ms)
+
+
+Started DELETE "/memos/3.json" for 10.240.1.16 at 2017-05-08 12:28:51 +0000
+Cannot render console from 10.240.1.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"3"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=3):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.6ms)
+
+
+Started POST "/memos.json" for 10.240.1.12 at 2017-05-08 12:29:50 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"今日も1日いい日だった！", "title"=>"今日の出来事", "memo"=>{"title"=>"今日の出来事", "body"=>"今日も1日いい日だった！"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "今日の出来事"], ["body", "今日も1日いい日だった！"], ["created_at", "2017-05-08 12:29:50.384652"], ["updated_at", "2017-05-08 12:29:50.384652"]]
+  [1m[35m (13.3ms)[0m  commit transaction
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/show.json.jbuilder (1.4ms)
+Completed 201 Created in 33ms (Views: 14.3ms | ActiveRecord: 14.0ms)
+
+
+Started POST "/memos.json" for 10.240.0.214 at 2017-05-08 12:29:53 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"今日も1日いい日だった！", "title"=>"今日の出来事", "memo"=>{"title"=>"今日の出来事", "body"=>"今日も1日いい日だった！"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "今日の出来事"], ["body", "今日も1日いい日だった！"], ["created_at", "2017-05-08 12:29:53.411412"], ["updated_at", "2017-05-08 12:29:53.411412"]]
+  [1m[36m (15.8ms)[0m  [1mcommit transaction[0m
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/show.json.jbuilder (2.1ms)
+Completed 201 Created in 27ms (Views: 5.7ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 12:29:56 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (5.3ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/memos/5.json" for 10.240.1.12 at 2017-05-08 12:29:59 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"5"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 5]]
+  [1m[35m (17.0ms)[0m  commit transaction
+Completed 204 No Content in 198ms (ActiveRecord: 17.4ms)
+
+
+Started DELETE "/memos/5.json" for 10.240.1.14 at 2017-05-08 12:30:08 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"5"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 5]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=5):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.9ms)
+
+
+Started DELETE "/memos/5.json" for 10.240.0.230 at 2017-05-08 12:30:08 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"5"}
+Can't verify CSRF token authenticity
+  [1m[35mMemo Load (0.2ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 5]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=5):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.1ms)
+
+
+Started POST "/memos.json" for 10.240.1.30 at 2017-05-08 12:30:56 +0000
+Cannot render console from 10.240.1.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"スーパーでじゃがいも、にんじん、お肉買うのを忘れない。", "title"=>"お買い物メモ", "memo"=>{"title"=>"お買い物メモ", "body"=>"スーパーでじゃがいも、にんじん、お肉買うのを忘れない。"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "お買い物メモ"], ["body", "スーパーでじゃがいも、にんじん、お肉買うのを忘れない。"], ["created_at", "2017-05-08 12:30:56.049881"], ["updated_at", "2017-05-08 12:30:56.049881"]]
+  [1m[36m (13.2ms)[0m  [1mcommit transaction[0m
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/show.json.jbuilder (1.8ms)
+Completed 201 Created in 22ms (Views: 5.0ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/memos.json" for 10.240.0.230 at 2017-05-08 12:31:00 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.5ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (144.2ms)
+Completed 200 OK in 149ms (Views: 147.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/memos/4.json" for 10.240.0.214 at 2017-05-08 12:31:04 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"4"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 4]]
+  [1m[35m (23.7ms)[0m  commit transaction
+Completed 204 No Content in 27ms (ActiveRecord: 24.2ms)
+
+
+Started DELETE "/memos/4.json" for 10.240.1.12 at 2017-05-08 12:31:15 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"4"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=4):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.5ms)
+
+
+Started DELETE "/memos/4.json" for 10.240.1.16 at 2017-05-08 12:31:17 +0000
+Cannot render console from 10.240.1.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"4"}
+Can't verify CSRF token authenticity
+  [1m[35mMemo Load (0.2ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 4]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=4):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.2ms)
+
+
+Started GET "/memos.json" for 10.240.1.12 at 2017-05-08 12:31:50 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (4.5ms)
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/memos.json" for 10.240.0.33 at 2017-05-08 12:33:16 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"明日、じゃがいも買う！", "title"=>"備忘録", "memo"=>{"title"=>"備忘録", "body"=>"明日、じゃがいも買う！"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "備忘録"], ["body", "明日、じゃがいも買う！"], ["created_at", "2017-05-08 12:33:16.503262"], ["updated_at", "2017-05-08 12:33:16.503262"]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/show.json.jbuilder (1.3ms)
+Completed 201 Created in 19ms (Views: 4.1ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 12:33:25 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (5.2ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/memos.json" for 10.240.0.214 at 2017-05-08 12:33:53 +0000
+Cannot render console from 10.240.0.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"ソードフィッシュ", "title"=>"面白かった映画", "memo"=>{"title"=>"面白かった映画", "body"=>"ソードフィッシュ"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "面白かった映画"], ["body", "ソードフィッシュ"], ["created_at", "2017-05-08 12:33:53.111806"], ["updated_at", "2017-05-08 12:33:53.111806"]]
+  [1m[35m (15.2ms)[0m  commit transaction
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/show.json.jbuilder (2.3ms)
+Completed 201 Created in 25ms (Views: 6.1ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/memos.json" for 10.240.1.12 at 2017-05-08 12:33:54 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (5.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/memos.json" for 10.240.1.14 at 2017-05-08 12:34:35 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"ポジティブシンキング", "title"=>"一言メモ", "memo"=>{"title"=>"一言メモ", "body"=>"ポジティブシンキング"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "一言メモ"], ["body", "ポジティブシンキング"], ["created_at", "2017-05-08 12:34:35.024951"], ["updated_at", "2017-05-08 12:34:35.024951"]]
+  [1m[35m (13.8ms)[0m  commit transaction
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/show.json.jbuilder (1.7ms)
+Completed 201 Created in 23ms (Views: 4.6ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 12:34:38 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (10.3ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.5 at 2017-05-08 12:34:44 +0000
+Cannot render console from 10.240.0.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (7.8ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.230 at 2017-05-08 12:53:07 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (5.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.240 at 2017-05-08 12:53:55 +0000
+Cannot render console from 10.240.0.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (6.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.230 at 2017-05-08 12:54:35 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (6.0ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 12:54:40 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (6.5ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/memos/6.json" for 10.240.0.33 at 2017-05-08 12:54:49 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"6"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 6]]
+  [1m[35m (13.2ms)[0m  commit transaction
+Completed 204 No Content in 16ms (ActiveRecord: 14.0ms)
+
+
+Started DELETE "/memos/6.json" for 10.240.0.33 at 2017-05-08 12:54:50 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"6"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 6]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=6):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.1ms)
+
+
+Started DELETE "/memos/7.json" for 10.240.0.5 at 2017-05-08 12:54:54 +0000
+Cannot render console from 10.240.0.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"7"}
+Can't verify CSRF token authenticity
+  [1m[35mMemo Load (0.3ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "memos" WHERE "memos"."id" = ?  [["id", 7]]
+  [1m[36m (10.2ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 13ms (ActiveRecord: 10.9ms)
+
+
+Started DELETE "/memos/7.json" for 10.240.0.33 at 2017-05-08 12:55:07 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"7"}
+Can't verify CSRF token authenticity
+  [1m[35mMemo Load (0.2ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 7]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=7):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (113.5ms)
+
+
+Started DELETE "/memos/8.json" for 10.240.0.230 at 2017-05-08 12:55:10 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"8"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 8]]
+  [1m[35m (23.8ms)[0m  commit transaction
+Completed 204 No Content in 28ms (ActiveRecord: 24.4ms)
+
+
+Started DELETE "/memos/8.json" for 10.240.0.240 at 2017-05-08 12:55:15 +0000
+Cannot render console from 10.240.0.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"8"}
+Can't verify CSRF token authenticity
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=8):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.1ms)
+
+
+Started DELETE "/memos/9.json" for 10.240.0.33 at 2017-05-08 12:55:20 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"9"}
+Can't verify CSRF token authenticity
+  [1m[35mMemo Load (0.2ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "memos" WHERE "memos"."id" = ?  [["id", 9]]
+  [1m[36m (14.4ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 18ms (ActiveRecord: 15.0ms)
+
+
+Started DELETE "/memos/9.json" for 10.240.0.33 at 2017-05-08 12:55:30 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"9"}
+Can't verify CSRF token authenticity
+  [1m[35mMemo Load (0.2ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 9]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=9):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 12:56:23 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (2.2ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/memos.json" for 10.240.1.14 at 2017-05-08 12:56:53 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"新聞記事一気読みする！", "title"=>"ニュースチュック", "memo"=>{"title"=>"ニュースチュック", "body"=>"新聞記事一気読みする！"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ニュースチュック"], ["body", "新聞記事一気読みする！"], ["created_at", "2017-05-08 12:56:53.868698"], ["updated_at", "2017-05-08 12:56:53.868698"]]
+  [1m[35m (13.3ms)[0m  commit transaction
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/show.json.jbuilder (1.2ms)
+Completed 201 Created in 21ms (Views: 3.9ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 12:56:54 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (3.4ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/memos.json" for 10.240.1.14 at 2017-05-08 12:57:37 +0000
+Cannot render console from 10.240.1.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.3ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/index.json.jbuilder (3.2ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/memos.json" for 10.240.1.12 at 2017-05-08 12:57:59 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"家の周りを5キロ走る！", "title"=>"ランニング", "memo"=>{"title"=>"ランニング", "body"=>"家の周りを5キロ走る！"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "ランニング"], ["body", "家の周りを5キロ走る！"], ["created_at", "2017-05-08 12:57:59.320271"], ["updated_at", "2017-05-08 12:57:59.320271"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/show.json.jbuilder (1.5ms)
+Completed 201 Created in 24ms (Views: 4.9ms | ActiveRecord: 16.1ms)
+
+
+Started POST "/memos.json" for 10.240.0.230 at 2017-05-08 12:58:01 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"家の周りを5キロ走る！", "title"=>"ランニング", "memo"=>{"title"=>"ランニング", "body"=>"家の周りを5キロ走る！"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ランニング"], ["body", "家の周りを5キロ走る！"], ["created_at", "2017-05-08 12:58:01.650908"], ["updated_at", "2017-05-08 12:58:01.650908"]]
+  [1m[35m (16.6ms)[0m  commit transaction
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/show.json.jbuilder (1.2ms)
+Completed 201 Created in 26ms (Views: 4.4ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/memos.json" for 10.240.0.230 at 2017-05-08 12:58:01 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/index.json.jbuilder (5.8ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/memos/13.json" for 10.240.0.5 at 2017-05-08 12:58:04 +0000
+Cannot render console from 10.240.0.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"13"}
+Can't verify CSRF token authenticity
+  [1m[35mMemo Load (0.2ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "memos" WHERE "memos"."id" = ?  [["id", 13]]
+  [1m[36m (11.8ms)[0m  [1mcommit transaction[0m
+Completed 204 No Content in 102ms (ActiveRecord: 12.6ms)
+
+
+Started DELETE "/memos/13.json" for 10.240.0.230 at 2017-05-08 12:58:10 +0000
+Cannot render console from 10.240.0.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as JSON
+  Parameters: {"id"=>"13"}
+Can't verify CSRF token authenticity
+  [1m[35mMemo Load (0.2ms)[0m  SELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT 1  [["id", 13]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Memo with 'id'=13):
+  app/controllers/memos_controller.rb:68:in `set_memo'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.9ms)
+
+
+Started POST "/memos.json" for 10.240.0.213 at 2017-05-08 12:59:04 +0000
+Cannot render console from 10.240.0.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"15分間！小説、実用書！", "title"=>"読書", "memo"=>{"title"=>"読書", "body"=>"15分間！小説、実用書！"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "読書"], ["body", "15分間！小説、実用書！"], ["created_at", "2017-05-08 12:59:04.216490"], ["updated_at", "2017-05-08 12:59:04.216490"]]
+  [1m[36m (13.2ms)[0m  [1mcommit transaction[0m
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/show.json.jbuilder (3.2ms)
+Completed 201 Created in 39ms (Views: 6.7ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 12:59:05 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (8.0ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/memos.json" for 10.240.0.5 at 2017-05-08 12:59:34 +0000
+Cannot render console from 10.240.0.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"最低5分間はやる！", "title"=>"瞑想", "memo"=>{"title"=>"瞑想", "body"=>"最低5分間はやる！"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "瞑想"], ["body", "最低5分間はやる！"], ["created_at", "2017-05-08 12:59:34.060915"], ["updated_at", "2017-05-08 12:59:34.060915"]]
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/show.json.jbuilder (1.5ms)
+Completed 201 Created in 23ms (Views: 4.5ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 12:59:35 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.5ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (1.0ms)
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/index.json.jbuilder (11.0ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/memos.json" for 10.240.1.12 at 2017-05-08 13:00:03 +0000
+Cannot render console from 10.240.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as JSON
+  Parameters: {"body"=>"制限時間は20分", "title"=>"メールチェック", "memo"=>{"title"=>"メールチェック", "body"=>"制限時間は20分"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "メールチェック"], ["body", "制限時間は20分"], ["created_at", "2017-05-08 13:00:03.760691"], ["updated_at", "2017-05-08 13:00:03.760691"]]
+  [1m[36m (12.7ms)[0m  [1mcommit transaction[0m
+  Rendered memos/_memo.json.jbuilder (0.5ms)
+  Rendered memos/show.json.jbuilder (1.9ms)
+Completed 201 Created in 55ms (Views: 37.9ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/memos.json" for 10.240.0.5 at 2017-05-08 13:00:04 +0000
+Cannot render console from 10.240.0.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/index.json.jbuilder (11.5ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 13:00:22 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/_memo.json.jbuilder (0.9ms)
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.6ms)
+  Rendered memos/_memo.json.jbuilder (0.7ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (10.2ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/memos.json" for 10.240.0.33 at 2017-05-08 13:00:25 +0000
+Cannot render console from 10.240.0.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as JSON
+  [1m[35mMemo Load (0.4ms)[0m  SELECT "memos".* FROM "memos"
+  Rendered memos/_memo.json.jbuilder (0.8ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.3ms)
+  Rendered memos/_memo.json.jbuilder (0.4ms)
+  Rendered memos/index.json.jbuilder (7.8ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.4ms)

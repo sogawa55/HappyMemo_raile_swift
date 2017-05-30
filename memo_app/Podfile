@@ -1,0 +1,14 @@
+
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+
+target 'memo_app' do
+
+use_frameworks!
+
+pod 'Alamofire'
+pod 'ObjectMapper'
+pod 'SwiftyJSON'
+
+end
+
