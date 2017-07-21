@@ -18,10 +18,6 @@
 
 
 ## スクリーンショット
-![一覧画面](docs/image03.PNG)
-![投稿画面](docs/image02.PNG)
-![詳細画面](docs/image01.PNG)
-
 <img src="https://user-images.githubusercontent.com/26180642/28452005-991a8fee-6e2b-11e7-9470-98a274c0eb04.PNG" width="500px">
 <img src="https://user-images.githubusercontent.com/26180642/28452102-00161f9c-6e2c-11e7-8eda-5c89ec151f89.PNG" width="500px">
 <img src="https://user-images.githubusercontent.com/26180642/28452134-22b12614-6e2c-11e7-870c-cd7ae6f2ebb8.PNG" width="500px">
