@@ -9,11 +9,12 @@
 * サーバーサイド、ruby on rails学習用に作成
 
 ## 実行環境
-* clientside：Swift 3.0
-* serverside:ruby 2.3.1
-* Fram：ruby on rails 4.2.5
+* クライアントサイド：Swift 3.0
+* サーバーサイド：ruby 2.3.1
+* フレームワーク：ruby on rails 4.2.5
 * library：Alamofire,SwiftyJSON,ObjectMapper
 * server：cloud9
+* Xcode 8.2
 * 対応：iOS 9.0以降 iPhone6、iPhone6s、iPhone7
 
 
