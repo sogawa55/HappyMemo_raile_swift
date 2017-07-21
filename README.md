@@ -12,7 +12,7 @@
 * クライアントサイド：Swift 3.0
 * サーバーサイド：ruby 2.3.1
 * フレームワーク：ruby on rails 4.2.5
-* library：Alamofire,SwiftyJSON,ObjectMapper
+* library：Alamofire、SwiftyJSON、ObjectMapper
 * server：cloud9
 * Xcode 8.2
 * 対応：iOS 9.0以降 iPhone6、iPhone6s、iPhone7
