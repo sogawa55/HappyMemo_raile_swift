@@ -22,16 +22,12 @@ class MemosViewController: UIViewController,UITableViewDelegate, UITableViewData
         
     }
 
-        
        
  override func viewDidLoad() {
     　　//registerメソッドでテーブルビューのセルを生成、再利用設定
         memosTableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
     
  }
-    
-    
-
     
 
  //画面の表示直前に実行   
@@ -66,20 +62,19 @@ override func viewWillAppear(_ animated: Bool) {
  }
 
 
-//メモの数だけセクションごとの行数を返す
+//メモの数だけデーブルの行数を返す
 func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return memos.count
     }
 
-//各行に表示するセルを返す
+//デーブルの行ごとセルのセルを返す
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    //識別子を利用して再利用可能なセルを取得する
     let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath as IndexPath)
-    
+    //行番号にあったメモのタイトルを取得
     let memo = memos[indexPath.row]
-    
     //セルにタイトルを設定
     cell.textLabel?.text =  memo.title
-    
     return cell
 
  }
