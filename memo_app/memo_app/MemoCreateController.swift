@@ -1,22 +1,15 @@
-//
-//  MemoCreateController.swift
-//  memo_app
-//
-//  Created by shohei on 2017/05/08.
-//  Copyright © 2017年 ogawa.shoei. All rights reserved.
-//
-
 import UIKit
 import Foundation
 
 class MemoCreateController: UIViewController, UITextFieldDelegate{
-
+     
+    //タイトル入力欄をOutlet接続
     @IBOutlet weak var inputTitle: UITextField!
 
-
+　　//本文入力欄をOutlet接続
     @IBOutlet weak var inputBoby: UITextField!
     
- 
+ 　　//画面をタップして入力画面を終了
     @IBAction func tapScreen(_ sender: Any) {
         
          self.view.endEditing(true)
@@ -29,6 +22,7 @@ class MemoCreateController: UIViewController, UITextFieldDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //デリゲートで値をMemoクラスに渡す
         inputTitle.delegate = self
         inputBoby.delegate = self
     }
@@ -47,7 +41,9 @@ class MemoCreateController: UIViewController, UITextFieldDelegate{
             let inTitle = inputTitle.text!
             let inBody  = inputBoby.text!
             
+            //入力された値を引数にMemoクラスをインスタンス化
             let memo = Memo(title: inTitle, body: inBody)
+            //Memoクラスメソッドを実行
             memo.createMemo(
                 success: {_ in 
                     print("success create")
