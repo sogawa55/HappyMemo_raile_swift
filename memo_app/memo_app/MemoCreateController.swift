@@ -37,7 +37,6 @@ class MemoCreateController: UIViewController, UITextFieldDelegate{
     
     @IBAction func clickButton(_ sender: Any) {
         
-
         
         if inputTitle.text != "" && inputBoby.text != "" {
             let inTitle = inputTitle.text!
