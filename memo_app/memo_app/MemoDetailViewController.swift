@@ -6,9 +6,8 @@ class MemoDetailViewController: UIViewController {
     
     var memo : Memo?
     
-    //タイトルテキストをOutlet接続
     @IBOutlet weak var titleText: UILabel!
-    //本文テキストをOutlet接続
+   
     @IBOutlet weak var bodyText: UILabel!
     
     
