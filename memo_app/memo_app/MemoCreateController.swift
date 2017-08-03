@@ -24,7 +24,7 @@ class MemoCreateController: UIViewController, UITextFieldDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //デリゲートで値をMemoクラスに渡す
+        //textFiel の情報を受け取るための delegate を設定
         inputTitle.delegate = self
         inputBoby.delegate = self
     }
