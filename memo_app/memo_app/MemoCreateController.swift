@@ -5,10 +5,8 @@ import Foundation
 
 class MemoCreateController: UIViewController, UITextFieldDelegate{
      
-    //タイトル入力欄をOutlet接続
     @IBOutlet weak var inputTitle: UITextField!
 
-　　//本文入力欄をOutlet接続
     @IBOutlet weak var inputBoby: UITextField!
     
  　　//画面をタップして入力画面を終了
