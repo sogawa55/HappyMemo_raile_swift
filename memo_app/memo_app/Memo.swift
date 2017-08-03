@@ -15,16 +15,12 @@ import SwiftyJSON
 
 
 
-class Memo: Mappable, CustomStringConvertible {
+class Memo: Mappable {
     
     
     var id:Int?
     var title: String?
     var body: String?
-    
-    var description: String {
-        return "title: \(self.title), body: \(self.body)"
-    }
     
     init(title: String, body: String) {
         self.title = title
