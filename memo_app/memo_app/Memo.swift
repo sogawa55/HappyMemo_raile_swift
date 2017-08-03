@@ -39,7 +39,7 @@ class Memo: Mappable {
             }
          //SwiftyJsonで取得したJson形式のデータを読み込む                                                                               
         let json = JSON(response.result.value!)
-         //mapメソッドでJsonオブジェクト形式のmemoをMemoモデルに変換してmemosに格納                                                                                  
+         //mapメソッドでJsonオブジェクト形式のmemoをMemoモデルに変換して格納                                                                                  
         let memos: [Memo] = json.arrayValue.map{memoJson -> Memo in
             return Mapper<Memo>().map(JSON: memoJson.dictionaryObject!)!
             }
@@ -59,7 +59,7 @@ class Memo: Mappable {
         ]
         
         let urlString = "http://rails-memo-sogawa.c9users.io:8080/memos.json"
-        //postメソッドでparamsを引数にしてrailsデータベースに格納
+        //paramsを引数にしてrailsデータベースにpost
         Alamofire.request(urlString, method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON{ response in
             if let json = response.result.value {
                 print("JSON: \(json)")
@@ -74,7 +74,7 @@ class Memo: Mappable {
     //メモを削除(返り値は利用しない)
     func deleteMemo(success success: @escaping (Void) -> Void, failure: (NSError?) -> Void) {
         
-        //deleteメソッドで、メモのIDを含んだAPIにアクセス
+        //メモのIDを含んだAPIに、deleteメソッドでアクセス
         Alamofire.request("http://rails-memo-sogawa.c9users.io:8080/memos/\(self.id!).json", method: .delete,encoding: JSONEncoding.default) .responseJSON { response in
             if let json = response.result.value {
                 print("JSON: \(json)")
